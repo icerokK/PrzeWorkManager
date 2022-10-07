@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose criteria for Worker "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chargeCHB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charging"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <CheckBox
+        android:id="@+id/netCHB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <CheckBox
+        android:id="@+id/batteryCHB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery not low"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBT"
+        android:text="SUBMIT"
+        />
+
+</LinearLayout>
